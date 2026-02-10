@@ -32,7 +32,7 @@ function getMetadata(lang: string = "ja"): Metadata {
       },
       openGraph: {
         title: "Value of the day",
-        description: "今日は星いくつ？ | あなたの一日に星を付けて価値をつけよう！",
+        description: "今日は星いくつ？ | 1日に星とレビューで価値をつけよう！",
         url: defaultUrl,
         siteName: "Value of the day",
         locale: "ja_JP",
@@ -50,7 +50,7 @@ function getMetadata(lang: string = "ja"): Metadata {
       twitter: {
         card: "summary_large_image",
         title: "Value of the day",
-        description: "あなたの一日に星を付けて価値をつけよう！",
+        description: "1日に星とレビューで価値をつけよう！",
         images: ["/opengraph-image.png"],
       },
     };
@@ -58,13 +58,13 @@ function getMetadata(lang: string = "ja"): Metadata {
 
   return {
     title: "Value of the day",
-    description: "Rate your day with stars | Value of the day",
+    description: "How many stars for today? | Value of the day",
     icons: {
       icon: "/icon.jpg",
     },
     openGraph: {
       title: "Value of the day",
-      description: "How many stars for today? | Track the value of your day!",
+      description: "How many stars for today? | Rate your day with stars and reviews!",
       url: defaultUrl,
       siteName: "Value of the day",
       locale: "en_US",
@@ -82,7 +82,7 @@ function getMetadata(lang: string = "ja"): Metadata {
     twitter: {
       card: "summary_large_image",
       title: "Value of the day",
-      description: "Track the value of your day!",
+      description: "Rate your day with stars and reviews!",
       images: ["/opengraph-image.png"],
     },
   };
