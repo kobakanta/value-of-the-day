@@ -7,6 +7,7 @@ import dayjs from 'dayjs';
 import 'dayjs/locale/ja';
 import isSameOrBefore from 'dayjs/plugin/isSameOrBefore';
 import Link from 'next/link';
+import { useAccess } from '../access-context';
 
 dayjs.locale('ja');
 dayjs.extend(isSameOrBefore);
@@ -82,8 +83,10 @@ export default function CalendarPage() {
     );
   };
 
+  const { hasPostedShared } = useAccess();
+
   const checkPostStatus = () => {
-    return typeof window !== 'undefined' && sessionStorage.getItem('hasPosted') === 'true';
+    return hasPostedShared;
   };
 
   const openModal = (dateKey: string) => {

@@ -4,11 +4,13 @@ import { useState } from "react";
 import { db } from "../firebase";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { useRouter } from "next/navigation";
+import { useAccess } from "../access-context";
 import Link from "next/link";
 import dayjs from "dayjs";
 
 export default function PostPage() {
   const router = useRouter();
+  const { setHasPostedShared } = useAccess();
 
   const [text, setText] = useState("");
   const [stars, setStars] = useState(0);
@@ -27,9 +29,7 @@ export default function PostPage() {
         createdAt: selectedDate,
       });
       // Mark user as having posted in this session
-      if (typeof window !== 'undefined') {
-        sessionStorage.setItem('hasPosted', 'true');
-      }
+      setHasPostedShared(true);
       router.push("/thanks");
     } catch (error) {
       console.error("Firestore保存エラー:", error);
