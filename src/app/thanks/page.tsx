@@ -34,7 +34,7 @@ export default function ThanksPage() {
         Your review means a lot to today&apos;s value.
       </p>
 
-      <div className="text-gray-600 mb-8 text-center max-w-md leading-relaxed text-xs">
+      <div className="text-gray-600 mb-8 text-center max-w-xl leading-relaxed text-xs">
         <p className="mb-1">
           You can now view detailed reviews on the calendar.
         </p>
