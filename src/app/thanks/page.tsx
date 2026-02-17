@@ -34,13 +34,28 @@ export default function ThanksPage() {
         Your review means a lot to today&apos;s value.
       </p>
 
+      <div className="text-sm text-gray-600 mb-8 text-center max-w-md leading-tight">
+        <p className="mb-1.5">
+          You can now view detailed reviews on the calendar.
+        </p>
+        <p className="mb-3">
+          Note: If you leave this site, you&apos;ll need to post again to view reviews.
+        </p>
+        <p className="mb-1 text-xs">
+          これでカレンダーで詳細なレビューを見ることができます。
+        </p>
+        <p className="text-xs">
+          注：サイトを離れると、レビューを見るために再度投稿する必要があります。
+        </p>
+      </div>
+
       {/* ボタン（ホバー＝黄／タップ＝黒） */}
       <div className="flex gap-4 md:gap-6">
         <Link
           href="/"
           className="border text-black bg-white font-semibold rounded-none transition
                      whitespace-nowrap px-4 py-2 md:px-8 md:py-2 text-sm md:text-base
-                     hover:bg-yellow-400 hover:text-white active:bg-black active:text-white"
+                     hover:bg-black hover:text-white active:bg-black active:text-white"
         >
           Back to Top
         </Link>
@@ -48,7 +63,7 @@ export default function ThanksPage() {
           href="/calendar"
           className="border text-black bg-white font-semibold rounded-none transition
                      whitespace-nowrap px-4 py-2 md:px-8 md:py-2 text-sm md:text-base
-                     hover:bg-yellow-400 hover:text-white active:bg-black active:text-white"
+                     hover:bg-black hover:text-white active:bg-black active:text-white"
         >
           Check reviews
         </Link>

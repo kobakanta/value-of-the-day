@@ -115,7 +115,9 @@ export default function CalendarPage() {
         <div className="alert-banner">
           <div className="alert-content">
             <span className="alert-text">
-              投稿するとレビューの詳細を見ることができます
+              Post your review to see detailed reviews
+              <br />
+              <span className="text-sm">投稿するとレビューの詳細を見ることができます</span>
             </span>
             <div className="alert-actions">
               <Link
