@@ -34,7 +34,7 @@ export default function ThanksPage() {
         Your review means a lot to today&apos;s value.
       </p>
 
-      <div className="text-sm text-gray-600 mb-8 text-center max-w-md leading-tight">
+      <div className="text-sm text-gray-600 mb-8 text-center max-w-md leading-relaxed">
         <p className="mb-1.5">
           You can now view detailed reviews on the calendar.
         </p>
@@ -45,7 +45,7 @@ export default function ThanksPage() {
           これでカレンダーで詳細なレビューを見ることができます。
         </p>
         <p className="text-xs">
-          ※サイトを離れたりページを更新したりすると、レビューを見るために<br />再度投稿する必要があります。
+          ※サイトを離れたりページを更新したりすると、レビューを見る<br />ために再度投稿する必要があります。
         </p>
       </div>
 
