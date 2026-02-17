@@ -38,7 +38,7 @@ export default function ThanksPage() {
         <p className="mb-1">
           You can now view detailed reviews on the calendar.
         </p>
-        <p className="mb-1">
+        <p className="mb-4">
           * If you leave this site or refresh the page, you&apos;ll need to post again to view reviews.
         </p>
         <p className="mb-1">
