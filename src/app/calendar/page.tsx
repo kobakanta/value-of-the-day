@@ -22,6 +22,7 @@ export default function CalendarPage() {
   const [currentDate, setCurrentDate] = useState(dayjs());
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
   const [allReviews, setAllReviews] = useState<Review[]>([]);
+  const [showAlert, setShowAlert] = useState(false);
 
   useEffect(() => {
     const fetchReviews = async () => {
@@ -81,9 +82,22 @@ export default function CalendarPage() {
     );
   };
 
+  const checkPostStatus = () => {
+    return typeof window !== 'undefined' && sessionStorage.getItem('hasPosted') === 'true';
+  };
+
   const openModal = (dateKey: string) => {
     const dayReviews = reviewsByDate[dateKey];
     if (dayReviews && dayReviews.length > 0) {
+      // Check if user has posted
+      if (!checkPostStatus()) {
+        // Show alert if not posted
+        setShowAlert(true);
+        // Auto-hide after 5 seconds
+        setTimeout(() => setShowAlert(false), 5000);
+        return;
+      }
+      // Show modal if posted
       setAllReviews(dayReviews);
       setSelectedDate(dateKey);
     }
@@ -96,6 +110,31 @@ export default function CalendarPage() {
 
   return (
     <div className="flex flex-col items-center p-4 max-w-[1024px] mx-auto relative min-h-screen pb-4">
+      {/* ---- アラートバナー ---- */}
+      {showAlert && (
+        <div className="alert-banner">
+          <div className="alert-content">
+            <span className="alert-text">
+              投稿するとレビューの詳細を見ることができます
+            </span>
+            <div className="alert-actions">
+              <Link
+                href="/post"
+                className="alert-button"
+              >
+                Post review
+              </Link>
+              <button
+                onClick={() => setShowAlert(false)}
+                className="alert-close"
+                aria-label="Close"
+              >
+                ×
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ---- スマホ用ヘッダー固定ボタン ---- */}
       <div className="md:hidden fixed top-0 left-0 w-full flex justify-around bg-white border-b border-gray-300 py-2 z-10">

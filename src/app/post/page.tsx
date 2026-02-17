@@ -26,6 +26,10 @@ export default function PostPage() {
         stars,
         createdAt: selectedDate,
       });
+      // Mark user as having posted in this session
+      if (typeof window !== 'undefined') {
+        sessionStorage.setItem('hasPosted', 'true');
+      }
       router.push("/thanks");
     } catch (error) {
       console.error("Firestore保存エラー:", error);
