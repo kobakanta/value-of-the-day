@@ -96,7 +96,7 @@ export default function Home() {
             <p>The calendar shows the average star rating for each date.</p>
             <p>Click on the date to see the review details.</p>
             <p>The average rating and shared reflections together define the value of the day.</p>
-            <p className="font-bold pt-2 italic">All reviews are completely anonymous.</p>
+            <p>All reviews are completely anonymous.</p>
           </>
         )}
         {language === 'ja' && (
@@ -106,7 +106,7 @@ export default function Home() {
             <p>各ページのカレンダーには、その日の平均の星数が表示されており、</p>
             <p>日付をクリックするとレビューの詳細を見ることができます。</p>
             <p>星の平均やレビューの集合で、その日の価値が決まります。</p>
-            <p className="font-bold pt-2 italic">投稿は完全に匿名で行われます。</p>
+            <p>投稿は完全に匿名で行われます。</p>
           </>
         )}
       </div>
