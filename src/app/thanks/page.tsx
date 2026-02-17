@@ -34,17 +34,17 @@ export default function ThanksPage() {
         Your review means a lot to today&apos;s value.
       </p>
 
-      <div className="text-sm text-gray-600 mb-8 text-center max-w-md leading-relaxed">
-        <p className="mb-1.5">
+      <div className="text-gray-600 mb-8 text-center max-w-md leading-relaxed text-xs">
+        <p className="mb-1">
           You can now view detailed reviews on the calendar.
         </p>
-        <p className="mb-3">
+        <p className="mb-1">
           * If you leave this site or refresh the page, you&apos;ll need to post again to view reviews.
         </p>
-        <p className="mb-1 text-xs">
+        <p className="mb-1">
           これでカレンダーで詳細なレビューを見ることができます。
         </p>
-        <p className="text-xs">
+        <p>
           ※サイトを離れたりページを更新したりすると、レビューを見る<br />ために再度投稿する必要があります。
         </p>
       </div>
