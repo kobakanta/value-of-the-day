@@ -39,13 +39,13 @@ export default function ThanksPage() {
           You can now view detailed reviews on the calendar.
         </p>
         <p className="mb-3">
-          * If you leave this site, you&apos;ll need to post again to view reviews.
+          * If you leave this site or refresh the page, you&apos;ll need to post again to view reviews.
         </p>
         <p className="mb-1 text-xs">
           これでカレンダーで詳細なレビューを見ることができます。
         </p>
         <p className="text-xs">
-          ※サイトを離れると、レビューを見るために再度投稿する必要があります。
+          ※サイトを離れたりページを更新したりすると、レビューを見るために再度投稿する必要があります。
         </p>
       </div>
 
