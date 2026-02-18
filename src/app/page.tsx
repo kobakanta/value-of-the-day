@@ -94,8 +94,8 @@ export default function Home() {
             <p>How many stars are you giving today?</p>
             <p>This site lets you rate each day with stars and a short review.</p>
             <p>The calendar shows the average star rating for each date.</p>
-            <p>Click on the date to see the review details.</p>
             <p>The average rating and shared reflections together define the value of the day.</p>
+            <p>After posting your review, you can click on the date to see the details.</p>
             <p>* All reviews are completely anonymous.</p>
           </>
         )}
@@ -104,7 +104,7 @@ export default function Home() {
             <p>あなたの今日は星いくつですか？</p>
             <p>このサイトは、1日を星評価とレビューで評価する場です。</p>
             <p>各ページのカレンダーには、その日の平均の星数が表示されており、</p>
-            <p>日付をクリックするとレビューの詳細を見ることができます。</p>
+            <p>投稿すると、日付をクリックしてレビューの詳細を見ることができます。</p>
             <p>星の平均やレビューの集合で、その日の価値が決まります。</p>
             <p>※投稿は完全に匿名で行われます。</p>
           </>
