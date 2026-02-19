@@ -13,9 +13,6 @@ optgroup,
 select,
 textarea {
   font-family: inherit;
-  font-size: 100%;
-  line-height: inherit;
-  margin: 0;
 }
 
 
@@ -285,7 +282,6 @@ textarea {
   right: 0;
   background: linear-gradient(135deg, #f5a623 0%, #ffa055 100%);
   color: white;
-  font-family: var(--font-noto-sans-jp), var(--font-geist-sans), sans-serif;
   padding: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 1000;
