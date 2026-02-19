@@ -96,7 +96,7 @@ export default function PostPage() {
           text-[clamp(24px,7vw,55px)] font-extrabold tracking-tight
         "
       >
-        How was your day?
+        How is your day?
       </h2>
 
       {/* ---- 日付選択 ---- */}
