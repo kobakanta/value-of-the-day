@@ -113,23 +113,27 @@ export default function CalendarPage() {
 
   return (
     <div className="flex flex-col items-center p-4 max-w-[1024px] mx-auto relative min-h-screen pb-4">
-      {/* ---- アラートモーダル ---- */}
+      {/* ---- アラートバナー ---- */}
       {showAlert && (
-        <div className="alert-modal-backdrop" onClick={() => setShowAlert(false)}>
-          <div className="alert-modal-content" onClick={(e) => e.stopPropagation()}>
-            <div className="alert-modal-text">
+        <div className="alert-banner">
+          <div className="alert-content">
+            <div className="alert-text">
               Post your review to see detailed reviews
               {"\n\n"}
               Yesterday’s scent or this morning’s mood.
               {"\n"}
               Surrender your data to see the lives of others.
             </div>
-            <div className="flex flex-col gap-3">
-              <Link href="/post" className="alert-modal-button">
+            <div className="alert-actions">
+              <Link href="/post" className="alert-button">
                 Post review
               </Link>
-              <button onClick={() => setShowAlert(false)} className="alert-modal-close">
-                Close
+              <button
+                onClick={() => setShowAlert(false)}
+                className="alert-close"
+                aria-label="Close"
+              >
+                ×
               </button>
             </div>
           </div>
